@@ -1,0 +1,83 @@
+* {
+    /* Box model */
+    box-sizing: border-box;
+}
+
+html {
+    /* This to set 1 rem = 10px */
+    font-size: 62.5%;
+}
+
+:root {
+    /* color */
+
+    /* Border */
+
+    /* background */
+
+    /* font */
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Inter", sans-serif;
+}
+
+body {
+    /* To set back body font is 16px */
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+
+input,
+textarea,
+select,
+button {
+    /* To make font-size, font-family inherit in this html tag */
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* Service */
+.service__list {
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+/* About */
+
+.about-stat__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.about-stat__item {
+    margin-left: 60px;
+}
+
+/* Feedback */
+.feedback__list {
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+/* Gallery */
+.gallery__list {
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+/* Test css */
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 30px;
+
+    background: #ccc;
+
+    font-size: 30px;
+    font-weight: 600;
+}
