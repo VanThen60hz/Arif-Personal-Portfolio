@@ -112,9 +112,81 @@
         />
     </head>
     <body>
-        <header class="header">
+        <!-- Tablet/mobile header -->
+        <header class="mobile-header header">
             <div class="container">
-                <div class="inner">Header</div>
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="#" class="logo__link">
+                        <img
+                            src="./assets/img/logo.png"
+                            alt="Arif Personal Portfolio Logo."
+                            class="logo"
+                        />
+                    </a>
+
+                    <div class="header__right">
+                        <a href="mailto:hi@arif.interactive" class="mail">
+                            <img
+                                src="./assets/icon/mail.svg"
+                                class="mail__icon"
+                                alt="mail icon"
+                            />
+
+                            <p class="mail__text">hi@arif.interactive</p>
+                        </a>
+
+                        <!-- Table/mobile menu -->
+                        <label for="menu-checkbox" class="toggle-menu">
+                            <img
+                                src="./assets/icon/toggle-menu.svg"
+                                alt="Toggle menu icon"
+                                class="toggle-menu__icon"
+                            />
+                        </label>
+                    </div>
+
+                    <!-- Toggle menu checkbox -->
+                    <input
+                        type="checkbox"
+                        name=""
+                        id="menu-checkbox"
+                        class="menu-checkbox"
+                        hidden
+                    />
+
+                    <!-- Overlay -->
+                    <label for="menu-checkbox" class="menu-overlay"></label>
+
+                    <!-- Menu content -->
+                    <div class="menu-drawer">
+                        <!-- Navigation -->
+                        <nav id="mobile-nav" class="navbar">
+                            <ul>
+                                <li class="navbar__item">
+                                    <a href="#project" class="navbar__link"
+                                        >Project</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#journey" class="navbar__link"
+                                        >Journey</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#service" class="navbar__link"
+                                        >Service</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#contact" class="navbar__link"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </header>
 

@@ -36,6 +36,101 @@ button {
     font-family: inherit;
 }
 
+/* Header */
+
+.header {
+    padding: 20px;
+}
+
+.logo {
+    width: 37px;
+    height: 44px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.mail__icon {
+    width: 32px;
+    height: 32px;
+    color: #5d3bee;
+}
+
+.mail__text {
+    display: none;
+}
+
+.toggle-menu__icon {
+    width: 32px;
+    color: #5d3bee;
+}
+
+.separate {
+    border-top: 1.5px solid #ebebeb;
+}
+
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.menu-drawer {
+    position: fixed;
+    inset: 0 0 0 60%;
+    padding: 40px;
+    background: #fff;
+    z-index: 101;
+    transform: translateX(100%);
+    transition: 0.5s ease;
+}
+
+.menu-checkbox:checked ~ .menu-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-checkbox:checked ~ .menu-drawer {
+    transform: translateX(0);
+}
+
+.menu-drawer ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.menu-drawer .nav__item {
+    width: 100%;
+}
+
+.menu-drawer ul a {
+    display: block;
+    color: #333;
+    padding: 14px 0;
+}
+
+.navbar__link {
+    color: #51586a;
+    font-family: "DM Sans";
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
 /* Service */
 .service__list {
     flex-wrap: nowrap;

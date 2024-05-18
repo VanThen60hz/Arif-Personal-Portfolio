@@ -11,6 +11,17 @@
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+    .mobile-menu-wrap {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .mail__text {
+        display: block;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -19,8 +30,8 @@
     .footer .container {
         max-width: 1330px;
     }
-}
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media screen and (min-width: 1400px) {
+    .show-on-mobile {
+        display: none;
+    }
 }
