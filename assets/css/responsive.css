@@ -19,8 +19,23 @@
         display: none;
     }
 
-    .mail__text {
+    .header-mail__text {
         display: block;
+    }
+
+    .pc-navbar {
+        display: block;
+    }
+
+    .header__inner {
+        flex-direction: row-reverse;
+        border-bottom: none;
+    }
+
+    .navbar__list {
+        display: flex;
+        align-items: center;
+        column-gap: 43px;
     }
 }
 

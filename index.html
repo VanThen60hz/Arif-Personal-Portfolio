@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
             rel="stylesheet"
         />
 
@@ -112,10 +112,11 @@
         />
     </head>
     <body>
-        <!-- Tablet/mobile header -->
         <header class="mobile-header header">
             <div class="container">
                 <div class="header__inner">
+                    <nav class="pc-navbar" id="pc-nav"></nav>
+
                     <!-- Logo -->
                     <a href="#" class="logo__link">
                         <img
@@ -126,14 +127,17 @@
                     </a>
 
                     <div class="header__right">
-                        <a href="mailto:hi@arif.interactive" class="mail">
+                        <a
+                            href="mailto:hi@arif.interactive"
+                            class="header-mail"
+                        >
                             <img
                                 src="./assets/icon/mail.svg"
-                                class="mail__icon"
+                                class="header-mail__icon"
                                 alt="mail icon"
                             />
 
-                            <p class="mail__text">hi@arif.interactive</p>
+                            <p class="header-mail__text">hi@arif.interactive</p>
                         </a>
 
                         <!-- Table/mobile menu -->
@@ -162,7 +166,7 @@
                     <div class="menu-drawer">
                         <!-- Navigation -->
                         <nav id="mobile-nav" class="navbar">
-                            <ul>
+                            <ul class="navbar__list">
                                 <li class="navbar__item">
                                     <a href="#project" class="navbar__link"
                                         >Project</a
@@ -399,10 +403,10 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
-            const pcNav = document.querySelector("#pc-nav");
             const mobileNav = document.querySelector("#mobile-nav");
+            const pcNav = document.querySelector("#pc-nav");
 
-            mobileNav.innerHTML = pcNav.innerHTML;
+            pcNav.innerHTML = mobileNav.innerHTML;
         </script>
     </body>
 </html>
