@@ -11,6 +11,16 @@
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+    .btn {
+        --height: 62px;
+
+        min-width: 170px;
+        padding: 16px 37px;
+
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
     .mobile-menu-wrap {
         display: none;
     }
@@ -37,6 +47,31 @@
         align-items: center;
         column-gap: 43px;
     }
+
+    .hero__title {
+        font-size: 6rem;
+    }
+
+    .hero__desc {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.67;
+        width: 70%;
+    }
+
+    .hero__action {
+        margin-top: 50px;
+    }
+
+    .hero__socials {
+        margin-top: 109px;
+
+        column-gap: 15px;
+    }
+
+    .social__icons {
+        column-gap: 20px;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -48,5 +83,12 @@
 
     .show-on-mobile {
         display: none;
+    }
+
+    .hero__title {
+        font-size: 8rem;
+        font-weight: 500;
+        line-height: 0.95;
+        letter-spacing: -3.2px;
     }
 }
