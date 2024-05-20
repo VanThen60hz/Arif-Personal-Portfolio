@@ -7,6 +7,19 @@
     .hero__row {
         flex-direction: row-reverse;
     }
+
+    .hero__content {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero__content::before {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        content: url(../img/hero-content-decor.png);
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

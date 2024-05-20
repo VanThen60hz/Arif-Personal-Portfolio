@@ -18,6 +18,7 @@ html {
     /* Border */
 
     /* background */
+    --primary-bg: #fbfaff;
 
     /* font */
     --primary-font: "DM Sans", sans-serif;
@@ -57,6 +58,10 @@ button {
 }
 
 /* Header */
+
+.header {
+    background: var(--primary-bg);
+}
 
 .logo {
     width: 37px;
@@ -120,7 +125,7 @@ button {
 .menu-drawer {
     position: fixed;
     inset: 0 0 0 50%;
-    padding: 60px;
+    padding: 40px;
     background: #fff;
     z-index: 101;
     transform: translateX(100%);
@@ -170,8 +175,13 @@ button {
 
 /* Hero */
 
+.container:has(.hero) {
+    background: var(--primary-bg);
+}
+
 .hero {
-    margin-top: 30px;
+    padding-top: 30px;
+    background: var(--primary-bg);
 }
 
 .hero__content {
@@ -229,6 +239,30 @@ button {
 .social__icons {
     display: flex;
     column-gap: 15px;
+}
+
+.hero__media {
+    position: relative;
+
+    margin-top: 20px;
+}
+
+.hero__media::before {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    content: url(../img/hero-bg.png);
+}
+
+.hero__img {
+    display: block;
+    width: 259px;
+    height: 355px;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 /* Service */
