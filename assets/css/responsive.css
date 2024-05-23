@@ -43,6 +43,10 @@
         grid-template-columns: repeat(4, auto);
     }
 
+    .service-item {
+        padding: 42px 32px;
+    }
+
     .service-item__icon {
         width: 74px;
         height: 74px;
@@ -68,7 +72,7 @@
     }
 
     .work-item__content {
-        width: 40%;
+        width: 44%;
     }
 
     .work-item__title {
@@ -88,6 +92,52 @@
 
     .work-item__img {
         width: 100%;
+    }
+
+    .stat__list {
+        width: 80%;
+    }
+
+    .stat-item__desc {
+        width: 100%;
+    }
+
+    .about {
+        margin-top: 140px;
+        padding: 0;
+    }
+
+    .about-stats {
+        margin-top: 70px;
+    }
+
+    .feedback {
+        margin-top: 76px;
+        padding: 74px 0;
+    }
+
+    .feedback__quote {
+        font-size: 2.4rem;
+    }
+
+    .feedback::before,
+    .feedback::after {
+        width: 300px;
+        height: 200px;
+        bottom: -50px;
+    }
+
+    .feedback::before {
+        left: -90px;
+    }
+
+    .feedback::after {
+        right: -90px;
+    }
+
+    .faq {
+        margin-top: 95px;
+        padding: 0;
     }
 }
 
@@ -187,8 +237,93 @@
         margin-top: 140px;
     }
 
-    .dots {
+    .service__dots {
         display: none;
+    }
+
+    .about__hey {
+        font-size: 3.2rem;
+    }
+
+    .play-btn {
+        width: 111px;
+        height: 111px;
+    }
+
+    .video__text {
+        font-size: 1.8rem;
+    }
+
+    .stat-item__number {
+        font-size: 5.6rem;
+        letter-spacing: 1.68px;
+    }
+
+    .stat-item__desc {
+        font-size: 1.8rem;
+    }
+
+    .feedback__title {
+        font-size: 5.6rem;
+        letter-spacing: -2.24px;
+    }
+
+    .feedback__desc {
+        font-size: 1.8rem;
+    }
+
+    .feedback::before,
+    .feedback::after {
+        width: 395.256px;
+        height: 292.346px;
+        bottom: -75px;
+    }
+
+    .feedback::before {
+        left: -100px;
+    }
+
+    .feedback::after {
+        right: -100px;
+    }
+
+    .faq__title {
+        font-size: 5.6rem;
+        letter-spacing: -2.24px;
+    }
+
+    .faq__list {
+        margin-top: 80px;
+    }
+
+    .faq-item {
+        align-items: center;
+    }
+
+    .faq-item__input:checked ~ .faq-item__icons {
+        top: 0;
+    }
+
+    .faq-item__title {
+        margin-bottom: 23px;
+        font-size: 3.2rem;
+    }
+
+    .faq-item__answer {
+        width: 60%;
+        margin-bottom: 23px;
+        font-size: 1.8rem;
+    }
+
+    .faq-item__icons {
+        flex-direction: column-reverse;
+        top: -20px;
+    }
+
+    .faq-item__icon {
+        width: 50px;
+        height: 50px;
+        padding: 15px;
     }
 }
 
@@ -218,6 +353,15 @@
         font-size: 5.6rem;
         line-height: 1.18;
         letter-spacing: -2.24px;
+    }
+
+    .about__title {
+        font-size: 5.6rem;
+        letter-spacing: -2.24px;
+    }
+
+    .about__desc {
+        font-size: 1.8rem;
     }
 }
 

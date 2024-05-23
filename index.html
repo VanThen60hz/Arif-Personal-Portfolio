@@ -402,7 +402,7 @@
                             </article>
                         </div>
                     </div>
-                    <div class="dots">
+                    <div class="dots service__dots">
                         <div class="dot"></div>
                         <div class="dot dot--active"></div>
                         <div class="dot"></div>
@@ -431,9 +431,11 @@
                         <div class="col">
                             <article class="work-item">
                                 <section class="work-item__content">
-                                    <h3 class="work-item__title">
-                                        Wally Website
-                                    </h3>
+                                    <a class="work-item__link">
+                                        <h3 class="work-item__title">
+                                            Wally Website
+                                        </h3>
+                                    </a>
                                     <p class="work-item__desc">
                                         Lorem ipsum dolor amet, consectetur
                                         adipiscing st elit.
@@ -454,9 +456,11 @@
                         <div class="col">
                             <article class="work-item">
                                 <section class="work-item__content">
-                                    <h3 class="work-item__title">
-                                        Banking App
-                                    </h3>
+                                    <a class="work-item__link">
+                                        <h3 class="work-item__title">
+                                            Banking App
+                                        </h3>
+                                    </a>
                                     <p class="work-item__desc">
                                         Lorem ipsum dolor amet, consectetur
                                         adipiscing st elit.
@@ -477,7 +481,11 @@
                         <div class="col">
                             <article class="work-item">
                                 <section class="work-item__content">
-                                    <h3 class="work-item__title">Web app</h3>
+                                    <a class="work-item__link">
+                                        <h3 class="work-item__title">
+                                            Web app
+                                        </h3>
+                                    </a>
                                     <p class="work-item__desc">
                                         Lorem ipsum dolor amet, consectetur
                                         adipiscing st elit.
@@ -498,9 +506,11 @@
                         <div class="col">
                             <article class="work-item">
                                 <section class="work-item__content">
-                                    <h3 class="work-item__title">
-                                        Oculus Website
-                                    </h3>
+                                    <a class="work-item__link">
+                                        <h3 class="work-item__title">
+                                            Oculus Website
+                                        </h3>
+                                    </a>
                                     <p class="work-item__desc">
                                         Lorem ipsum dolor amet, consectetur
                                         adipiscing st elit.
@@ -530,43 +540,268 @@
                 <div class="container">
                     <section class="about__top row">
                         <div class="col-12 col-md-6 offset-md-3">
-                            <div class="inner">About top</div>
+                            <p class="about__hey">Hey,,,,It’s Arif👋</p>
+                            <h3 class="about__title">Interactive Designer</h3>
+                            <p class="about__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
                         </div>
                     </section>
 
                     <div class="about-stats row">
                         <div class="col-12 col-md-10 offset-md-1">
-                            <div class="about-stat__list">
-                                <div class="about-stat__item">
-                                    <div class="inner">Stat 1</div>
-                                </div>
-                                <div class="about-stat__item">
-                                    <div class="inner">Stat 2</div>
-                                </div>
-                                <div class="about-stat__item">
-                                    <div class="inner">Stat 3</div>
+                            <div class="about-stats-wrap">
+                                <div class="stat__list">
+                                    <div class="stat-item">
+                                        <p class="stat-item__number">
+                                            <b>21+</b>
+                                        </p>
+                                        <p class="stat-item__desc">
+                                            Features & Awards
+                                        </p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <p class="stat-item__number">
+                                            <b>08+</b>
+                                        </p>
+                                        <p class="stat-item__desc">
+                                            Years Experience
+                                        </p>
+                                    </div>
+                                    <div class="stat-item">
+                                        <p class="stat-item__number">
+                                            <b>97%</b>
+                                        </p>
+                                        <p class="stat-item__desc">
+                                            Clients Rating
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="about__video">
-                        <div class="inner">About video</div>
+                    <div class="about__video-wrap">
+                        <video id="videoDemo" class="about__video" controls>
+                            <source
+                                src="./assets/video/video-demo.mp4"
+                                type="video/mp4"
+                            />
+                            Your browser does not support HTML video.
+                        </video>
+                        <button
+                            id="playBtn"
+                            class="play-btn"
+                            onclick="playFunction()"
+                        >
+                            <img src="./assets/icon/play.svg" alt="play icon" />
+                        </button>
+                        <p id="videoText" class="video__text">Intro Video</p>
                     </div>
                 </div>
             </section>
 
             <section class="feedback">
                 <div class="container">
+                    <div class="feedback__top row">
+                        <div class="col-12 col-md-6 offset-md-3">
+                            <h2 class="feedback__title">What people says</h2>
+                            <p class="feedback__desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="feedback__list row">
                         <div class="feedback__item col-12 col-md-8 offset-md-2">
-                            <div class="inner">Feedback item 1</div>
+                            <blockquote class="feedback__quote">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="feedback-responder">
+                                <figure class="responder__avatar-wrap">
+                                    <img
+                                        class="responder__avatar"
+                                        src="./assets/img/responder-avatar.png"
+                                        alt=""
+                                    />
+                                    <figcaption class="responder__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </figure>
+                                <p class="responder__job">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+
+                            <div class="dots feedback__dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot dot--active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
                         </div>
                         <div class="feedback__item col-12 col-md-8 offset-md-2">
-                            <div class="inner">Feedback item 2</div>
+                            <blockquote class="feedback__quote">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="feedback-responder">
+                                <figure class="responder__avatar-wrap">
+                                    <img
+                                        class="responder__avatar"
+                                        src="./assets/img/responder-avatar.png"
+                                        alt=""
+                                    />
+                                    <figcaption class="responder__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </figure>
+                                <p class="responder__job">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+
+                            <div class="dots feedback__dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot dot--active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
                         </div>
                         <div class="feedback__item col-12 col-md-8 offset-md-2">
-                            <div class="inner">Feedback item 3</div>
+                            <blockquote class="feedback__quote">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="feedback-responder">
+                                <figure class="responder__avatar-wrap">
+                                    <img
+                                        class="responder__avatar"
+                                        src="./assets/img/responder-avatar.png"
+                                        alt=""
+                                    />
+                                    <figcaption class="responder__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </figure>
+                                <p class="responder__job">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+
+                            <div class="dots feedback__dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot dot--active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="feedback__item col-12 col-md-8 offset-md-2">
+                            <blockquote class="feedback__quote">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="feedback-responder">
+                                <figure class="responder__avatar-wrap">
+                                    <img
+                                        class="responder__avatar"
+                                        src="./assets/img/responder-avatar.png"
+                                        alt=""
+                                    />
+                                    <figcaption class="responder__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </figure>
+                                <p class="responder__job">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+
+                            <div class="dots feedback__dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot dot--active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="feedback__item col-12 col-md-8 offset-md-2">
+                            <blockquote class="feedback__quote">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="feedback-responder">
+                                <figure class="responder__avatar-wrap">
+                                    <img
+                                        class="responder__avatar"
+                                        src="./assets/img/responder-avatar.png"
+                                        alt=""
+                                    />
+                                    <figcaption class="responder__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </figure>
+                                <p class="responder__job">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+
+                            <div class="dots feedback__dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot dot--active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <div class="feedback__item col-12 col-md-8 offset-md-2">
+                            <blockquote class="feedback__quote">
+                                “Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa.”
+                            </blockquote>
+                            <div class="feedback-responder">
+                                <figure class="responder__avatar-wrap">
+                                    <img
+                                        class="responder__avatar"
+                                        src="./assets/img/responder-avatar.png"
+                                        alt=""
+                                    />
+                                    <figcaption class="responder__name">
+                                        Joe Elia
+                                    </figcaption>
+                                </figure>
+                                <p class="responder__job">
+                                    User Interface Design at PCL Lab
+                                </p>
+                            </div>
+
+                            <div class="dots feedback__dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot dot--active"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -576,30 +811,310 @@
                 <div class="container">
                     <div class="faq__top row">
                         <div class="col-12 col-md-6">
-                            <div class="inner">Faq title</div>
+                            <h2 class="faq__title">
+                                A few questions clients normally ask me
+                            </h2>
                         </div>
                     </div>
 
-                    <div class="fag__list row">
-                        <div class="col-12 col-md-10">
-                            <section class="faq__item">
-                                <div class="inner">Faq item 1</div>
-                            </section>
-                        </div>
-                        <div class="col-12 col-md-10">
-                            <section class="faq__item">
-                                <div class="inner">Faq item 2</div>
-                            </section>
-                        </div>
-                        <div class="col-12 col-md-10">
-                            <section class="faq__item">
-                                <div class="inner">Faq item 3</div>
-                            </section>
-                        </div>
-                        <div class="col-12 col-md-10">
-                            <section class="faq__item">
-                                <div class="inner">Faq item 4</div>
-                            </section>
+                    <div class="faq__list row">
+                        <div class="col-12 col-lg-10">
+                            <div class="faq-item">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="faq01"
+                                    class="faq-item__input"
+                                    hidden
+                                />
+
+                                <section class="faq-item__content">
+                                    <label
+                                        class="faq-item__title-wrap"
+                                        for="faq01"
+                                    >
+                                        <h3 class="faq-item__title">
+                                            What is your hourly rate?
+                                        </h3>
+                                    </label>
+                                    <p class="faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </section>
+
+                                <label class="faq-item__icons" for="faq01">
+                                    <svg
+                                        class="faq-item__icon faq-item__plus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="faq-item__icon faq-item__minus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </label>
+                                <div class="faq-item__separate"></div>
+                            </div>
+                            <div class="faq-item">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="faq02"
+                                    class="faq-item__input"
+                                    hidden
+                                />
+
+                                <section class="faq-item__content">
+                                    <label
+                                        class="faq-item__title-wrap"
+                                        for="faq02"
+                                    >
+                                        <h3 class="faq-item__title">
+                                            What type of projects do you take
+                                            on?
+                                        </h3>
+                                    </label>
+                                    <p class="faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </section>
+
+                                <label class="faq-item__icons" for="faq02">
+                                    <svg
+                                        class="faq-item__icon faq-item__plus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="faq-item__icon faq-item__minus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </label>
+                                <div class="faq-item__separate"></div>
+                            </div>
+                            <div class="faq-item">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="faq03"
+                                    class="faq-item__input"
+                                    hidden
+                                />
+
+                                <section class="faq-item__content">
+                                    <label
+                                        class="faq-item__title-wrap"
+                                        for="faq03"
+                                    >
+                                        <h3 class="faq-item__title">
+                                            How do you charge for projects ?
+                                        </h3>
+                                    </label>
+                                    <p class="faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </section>
+
+                                <label class="faq-item__icons" for="faq03">
+                                    <svg
+                                        class="faq-item__icon faq-item__plus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="faq-item__icon faq-item__minus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </label>
+                                <div class="faq-item__separate"></div>
+                            </div>
+                            <div class="faq-item">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="faq04"
+                                    class="faq-item__input"
+                                    hidden
+                                />
+
+                                <section class="faq-item__content">
+                                    <label
+                                        class="faq-item__title-wrap"
+                                        for="faq04"
+                                    >
+                                        <h3 class="faq-item__title">
+                                            What time-zone do you work in?
+                                        </h3>
+                                    </label>
+                                    <p class="faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </section>
+
+                                <label class="faq-item__icons" for="faq04">
+                                    <svg
+                                        class="faq-item__icon faq-item__plus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="faq-item__icon faq-item__minus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </label>
+                                <div class="faq-item__separate"></div>
+                            </div>
+                            <div class="faq-item">
+                                <input
+                                    type="checkbox"
+                                    name=""
+                                    id="faq05"
+                                    class="faq-item__input"
+                                    hidden
+                                />
+
+                                <section class="faq-item__content">
+                                    <label
+                                        class="faq-item__title-wrap"
+                                        for="faq05"
+                                    >
+                                        <h3 class="faq-item__title">
+                                            How often can we communicate?
+                                        </h3>
+                                    </label>
+                                    <p class="faq-item__answer">
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. In urna, non nisl
+                                        tincidunt ut elementum turpis.
+                                    </p>
+                                </section>
+
+                                <label class="faq-item__icons" for="faq05">
+                                    <svg
+                                        class="faq-item__icon faq-item__plus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                        <path
+                                            d="M7.04199 14.084V0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+
+                                    <svg
+                                        class="faq-item__icon faq-item__minus"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M14.084 7.04199H0"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                        />
+                                    </svg>
+                                </label>
+                                <div class="faq-item__separate"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -653,6 +1168,23 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
+
+            var video = document.getElementById("videoDemo");
+            var btn = document.getElementById("playBtn");
+            var videoText = document.getElementById("videoText");
+            video.removeAttribute("controls");
+            function playFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.style.display = "none";
+                    video.setAttribute("controls", "controls");
+                    videoText.style.display = "none";
+                } else {
+                    btn.style.display = "block";
+                    video.pause();
+                }
+            }
+
             const mobileNav = document.querySelector("#mobile-nav");
             const pcNav = document.querySelector("#pc-nav");
 
