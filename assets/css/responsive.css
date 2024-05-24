@@ -16,6 +16,10 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+    .hero {
+        overflow: hidden;
+    }
+
     .hero__row {
         position: relative;
         flex-direction: row-reverse;
@@ -138,6 +142,36 @@
     .faq {
         margin-top: 95px;
         padding: 0;
+    }
+
+    .cta__row {
+        padding: 48px 80px;
+    }
+
+    .footer__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo__link,
+    .footer-logo__link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-mail {
+        order: 1;
+        margin-top: 0;
+    }
+
+    .footer-navbar {
+        order: 2;
+    }
+
+    .footer-navbar .navbar__list {
+        margin-top: 0;
     }
 }
 
@@ -325,13 +359,71 @@
         height: 50px;
         padding: 15px;
     }
+
+    .gallery {
+        margin-top: 160px;
+    }
+
+    .gallery__title {
+        font-size: 5.6rem;
+        letter-spacing: -2.24px;
+    }
+
+    .gallery__desc {
+        font-size: 1.8rem;
+    }
+
+    .gallery__link {
+        font-size: 3.2rem;
+    }
+
+    .gallery__list {
+        margin-top: 70px;
+    }
+
+    .gallery__dots {
+        display: none;
+    }
+
+    .cta {
+        margin-top: 140px;
+    }
+
+    .cta-decor-top-right,
+    .cta-decor-left-bottom {
+        display: block;
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .footer__bottom {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+
+        border-top: 1px solid var(--footer-bottom-color);
+    }
+
+    .footer__separate {
+        display: none;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
     .header .container,
+    .cta .container,
     .footer .container {
         max-width: 1330px;
+    }
+
+    .header .container,
+    .footer .container {
+        padding: 0;
     }
 
     .show-on-mobile {
@@ -363,10 +455,23 @@
     .about__desc {
         font-size: 1.8rem;
     }
+
+    .cta__title {
+        font-size: 4.8rem;
+        letter-spacing: -2.24px;
+    }
+
+    .cta__desc {
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     .hero__row::before {
         right: -190px;
+    }
+
+    .footer__bottom {
+        padding: 0 129px;
     }
 }
