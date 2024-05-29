@@ -29,6 +29,11 @@ html {
     --primary-font: "DM Sans", sans-serif;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     /* To set back body font is 16px */
     font-size: 1.6rem;
